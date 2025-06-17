@@ -10,4 +10,5 @@ typedef struct {
 void cadastrarCliente(Cliente *clientes, int *totalClientes);
 void listarClientes(Cliente *clientes, int totalClientes);
 void buscarClientePorID(Cliente *clientes, int totalClientes, int idCliente);
+
 #endif
