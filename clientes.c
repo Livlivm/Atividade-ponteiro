@@ -1,8 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 #include "clientes.h"
-#include "locacoes.h"
 
 void cadastrarCliente(Cliente *clientes, int *totalClientes) {
     printf("\n----== Cadastrar Cliente ==---\n");
@@ -15,6 +12,7 @@ void cadastrarCliente(Cliente *clientes, int *totalClientes) {
     (*totalClientes)++;
     printf("Você está cadastrado!\n");
 }
+
 void listarClientes(Cliente *clientes, int totalClientes) {
     printf("\n---== Listar Clientes ==---\n");
     for (int i = 0; i < totalClientes; i++) {
@@ -23,6 +21,7 @@ void listarClientes(Cliente *clientes, int totalClientes) {
         printf("Telefone: %d\n", clientes[i].telefone);
     }
 }
+
 void buscarClientePorID(Cliente *clientes, int totalClientes, int idCliente) {
     int encontrado = 0;
     printf("\n ---== Buscar Cliente por ID ==---\n");
