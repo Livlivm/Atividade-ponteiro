@@ -1,15 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #include "clientes.h"
 #include "locacoes.h"
 
 int main() {
-    int cliente;
-    int ID;
-    char nome[50]; 
-    int telefone;
-
     Cliente clientes[10];
     int totalClientes = 0;
 
@@ -65,11 +59,3 @@ int main() {
 
     return 0;
 }
-        
-void finalizarfuncao() {
-    printf("Saindo...\n");
-    getchar();
-    getchar();
-    system("clear"); 
-}
-       
